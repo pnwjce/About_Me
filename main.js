@@ -72,23 +72,24 @@ else {
 }
 
 //Guess my number
-var numberGame = prompt('My family has a lucky number we always ask to have on our sports jerseys. Can you guess it? (Hint: it\'s under 20)');
-console.log('What\'s my lucky jersey number : ' + numberGame);
+var numberGameString = prompt('My family has a lucky number we always ask to have on our sports jerseys. Can you guess it? (Hint: it\'s under 20)');
+console.log('What\'s my lucky jersey number : ' + numberGameString);
 
-var jerseyNumber = 14 
+var jerseyNumber = 14 ;
+var numberGame = parseInt(numberGameString);
+console.log(numberGame);
 
 for(var i = 0; i < 4; i++){
-    if(numberGame === jerseyNumber){
-        alert('Wow! You got it!');
-        break;
-    }else if(numberGame < jerseyNumber){
-      numberGame = prompt('Oops, too low! Try again.');
-      console.log('Too low : ' + numberGame);
-    }else{numberGame > jerseyNumber){
-      numberGame = prompt('Shooting for the stars, you went too high! Try again.');
-      console.log('Too high : ' + numberGame);
-    }
-    
-    }
-
+  if(numberGame === jerseyNumber){
+    alert('Wow! You got it!');
+    break;
+  }else if(numberGame < jerseyNumber){
+    numberGame = prompt('Oops, too low! Try again.');
+    numberGame = parseInt(numberGame);
+    console.log('Too low : ' + numberGame);
+  }else {
+    numberGame = prompt('Shooting for the stars, you went too high! Try again.');
+    numberGame = parseInt(numberGame);
+    console.log('Too high : ' + numberGame);
+  }
 }
