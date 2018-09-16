@@ -3,10 +3,11 @@
 //Get Username
 var userName = prompt('Welcome! What\'s your name?');
 console.log('What\'s your name : ' + userName);
-alert('Hello ' + userName + ', nice to meet you!');
+alert('Hello ' + userName + ', nice to meet you! Shall we play a game so you can get to know me better? (Answers should be yes/y or no/n));
 
 //Rain question
 var rain = prompt('I live in Seattle, and we get a lot of rain. So do you think I like the rain?');
+rain = rain.toLowerCase();
 console.log('do I like the rain : ' + rain);
 if(rain === 'yes') {
   alert('You are right, ' + userName + '. I really, really do!');
@@ -20,6 +21,7 @@ else {
 
 //Cats or Dogs?
 var animals = prompt('If I could choose only one pet, would I choose a dog?');
+animals = animals.toLowerCase();
 console.log('cats or dogs : ' + animals);
 if(animals === 'no') {
   alert('Though my first pet, outside of the occasional goldfish, was a cat. Sadly, I would still choose dogs. ');
@@ -33,6 +35,7 @@ else {
 
 //Zombie movies?
 var zombie = prompt('Do I like zombie movies?');
+zombie = zombie.toLowerCase();
 console.log('Do I like zombie movies : ' + zombie);
 if(zombie === 'yes') {
   alert('In all forms, I like them silly and scary.');
@@ -47,6 +50,7 @@ else {
 
 //Romance novel question
 var romNovel = prompt('Do I like reading a good romance novel?');
+romNovel = romNovel.toLowerCase();
 console.log('Do I like reading romance novels : ' + romNovel);
 if(romNovel === 'yes') {
   alert('Yes, I think there\'s always room for more love in the world.');
@@ -60,6 +64,7 @@ else {
 
 //Country music question
 var country = prompt('What are my feelings about country music? Yes or No?');
+country = country.toLowerCase();
 console.log('Do I like country music : ' + country);
 if(country === 'yes') {
   alert('Yeehaw! I surely do!');
