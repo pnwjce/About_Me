@@ -3,7 +3,7 @@
 //Get Username
 var userName = prompt('Welcome! What\'s your name?');
 console.log('What\'s your name : ' + userName);
-alert('Hello ' + userName + ', nice to meet you! Shall we play a game so you can get to know me better? (Answers should be yes/y or no/n));
+alert('Hello ' + userName + ', nice to meet you! Shall we play a game so you can get to know me better? (Answers should be yes/y or no/n)');
 
 //Rain question
 var rain = prompt('I live in Seattle, and we get a lot of rain. So do you think I like the rain?');
@@ -98,3 +98,16 @@ for(var i = 0; i < 4; i++){
     console.log('Too high : ' + numberGame);
   }
 }
+
+//Dream Cities to Visit
+var dreamCities = prompt('Can you guess one of my Top 5 Cities I want to visit?');
+dreamCities = dreamCities.toLowerCase();
+console.log('What are my dream cities to visit : ' + dreamCities);
+
+if(dreamCities === 'Istanbul' || dreamCities === 'Sydney' || dreamCities === 'Marrakesh' || dreamCities === 'Seoul' || dreamCities === 'Auckland') {
+  alert('Good guess, you picked well!');
+}
+else {
+  alert('Not one of mine, but maybe I should add it!');
+}
+
