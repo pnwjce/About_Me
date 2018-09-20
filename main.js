@@ -6,75 +6,88 @@ console.log('What\'s your name : ' + userName);
 alert('Hello ' + userName + ', nice to meet you! Shall we play a game so you can get to know me better? (Answers should be yes or no)');
 
 //Rain question
-var rain = prompt('I live in Seattle, and we get a lot of rain. So do you think I like the rain?');
-rain = rain.toLowerCase();
-console.log('do I like the rain : ' + rain);
-if(rain === 'yes') {
-  alert('You are right, ' + userName + '. I really, really do!');
-}
-else if(rain === 'no') {
-  alert('I really do actually. I even miss the rain during the summer.');
-}
-else {
-  alert('Was that a tricky question?');
-}
+var functionRain = function() {
+  var rain = prompt('I live in Seattle, and we get a lot of rain. So do you think I like the rain?');
+  rain = rain.toLowerCase();
+  console.log('do I like the rain : ' + rain);
+  if(rain === 'yes') {
+    alert('You are right, ' + userName + '. I really, really do!');
+  }
+  else if(rain === 'no') {
+    alert('I really do actually. I even miss the rain during the summer.');
+  }
+  else {
+    alert('Was that a tricky question?');
+  }
+};
+functionRain();
 
 //Cats or Dogs?
-var animals = prompt('If I could choose only one pet, would I choose a dog?');
-animals = animals.toLowerCase();
-console.log('cats or dogs : ' + animals);
-if(animals === 'no') {
-  alert('Though my first pet, outside of the occasional goldfish, was a cat. Sadly, I would still choose dogs. ');
-}
-else if(animals === 'yes') {
-  alert('Yes, I would. Somehow I prefer pets who don\'t judge me.');
-}
-else {
-  alert('I\'m a little more basic than that.');
-}
+var functionAnimals = function() {
+  var animals = prompt('If I could choose only one pet, would I choose a cat?');
+  animals = animals.toLowerCase();
+  console.log('cats or dogs : ' + animals);
+  if(animals === 'yes') {
+    alert('Though my first pet, outside of the occasional goldfish, was a cat. Sadly, I would still choose dogs. ');
+  }
+  else if(animals === 'no') {
+    alert('I would choose a dog! Somehow I prefer pets who don\'t judge me.');
+  }
+  else {
+    alert('I\'m a little more basic than that.');
+  }
+};
+functionAnimals();
 
 //Zombie movies?
-var zombie = prompt('Do I like zombie movies?');
-zombie = zombie.toLowerCase();
-console.log('Do I like zombie movies : ' + zombie);
-if(zombie === 'yes') {
-  alert('In all forms, I like them silly and scary.');
-}
-else if(zombie === 'no') {
-  alert('Sadly ' + userName + ', you are wrong on this one. I don\t think I\'ve ever met a zombie I didn\'t like.');
-}
-else {
-  alert('Did the zombies get to you already?');
-}
-
+var functionZombie = function() {
+  var zombie = prompt('Do I like zombie movies?');
+  zombie = zombie.toLowerCase();
+  console.log('Do I like zombie movies : ' + zombie);
+  if(zombie === 'yes') {
+    alert('In all forms, I like them silly and scary.');
+  }
+  else if(zombie === 'no') {
+    alert('Sadly ' + userName + ', you are wrong on this one. I don\'t think I\'ve ever met a zombie I didn\'t like.');
+  }
+  else {
+    alert('Did the zombies get to you already?');
+  }
+};
+functionZombie();
 
 //Romance novel question
-var romNovel = prompt('Do I like reading a good romance novel?');
-romNovel = romNovel.toLowerCase();
-console.log('Do I like reading romance novels : ' + romNovel);
-if(romNovel === 'yes') {
-  alert('Yes, I think there\'s always room for more love in the world.');
-}
-else if(romNovel === 'no') {
-  alert('Nope, I\'m a bit of a romantic. Bring on the love!');
-}
-else {
-  alert('No judgement ' + userName + ', no judgement.');
-}
+var functionRomNovel = function() {var romNovel = prompt('Do I like reading a good romance novel?');
+  romNovel = romNovel.toLowerCase();
+  console.log('Do I like reading romance novels : ' + romNovel);
+  if(romNovel === 'yes') {
+    alert('Yes, I think there\'s always room for more love in the world.');
+  }
+  else if(romNovel === 'no') {
+    alert('Nope, I\'m a bit of a romantic. Bring on the love!');
+  }
+  else {
+    alert('No judgement ' + userName + ', no judgement.');
+  }
+};
+functionRomNovel();
 
 //Country music question
-var country = prompt('What are my feelings about country music? Yes or No?');
-country = country.toLowerCase();
-console.log('Do I like country music : ' + country);
-if(country === 'yes') {
-  alert('Yeehaw! I surely do!');
-}
-else if(country === 'no') {
-  alert('No cowboy, you read me wrong. I love a good ditty.');
-}
-else {
-  alert('I like all the tunes friend.');
-}
+var functionCountry = function() {
+  var country = prompt('Do I hate country music?');
+  country = country.toLowerCase();
+  console.log('Do I hate country music : ' + country);
+  if(country === 'yes') {
+    alert('No cowboy, you read me wrong. I love a good ditty.');
+  }
+  else if(country === 'no') {
+    alert('Yeehaw! I surely do enjoy a sweet tune!');
+  }
+  else {
+    alert('I like all the tunes friend.');
+  }
+};
+functionCountry();
 
 //Guess my number
 var numberGameString = prompt('My family has a lucky number we always ask to have on our sports jerseys. Can you guess it? (Hint: it\'s under 20)');
