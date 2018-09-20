@@ -117,7 +117,7 @@ var dreamCities = prompt('Can you guess one of my Top 5 Cities I want to visit?'
 dreamCities = dreamCities.toLowerCase();
 console.log('What are my dream cities to visit : ' + dreamCities);
 
-if(dreamCities === 'Istanbul' || dreamCities === 'Sydney' || dreamCities === 'Marrakesh' || dreamCities === 'Seoul' || dreamCities === 'Auckland') {
+if(dreamCities === 'istanbul' || dreamCities === 'sydney' || dreamCities === 'marrakesh' || dreamCities === 'seoul' || dreamCities === 'auckland') {
   alert('Good guess, you picked well!');
 }
 else {

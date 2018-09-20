@@ -1,3 +1,14 @@
 body {
-    background-color: bisque;
+    background-image: url(./About_Me/blue-bricks-pattern-5340.jpg);
+    text-align: center;
+
+}
+
+h1 {
+    font-family: cursive;
+    font-weight: 200;
+}
+
+ol {
+    list-style-position: inside;
 }
