@@ -3,7 +3,7 @@
 //Get Username
 var userName = prompt('Welcome! What\'s your name?');
 console.log('What\'s your name : ' + userName);
-alert('Hello ' + userName + ', nice to meet you! Shall we play a game so you can get to know me better? (Answers should be yes/y or no/n)');
+alert('Hello ' + userName + ', nice to meet you! Shall we play a game so you can get to know me better? (Answers should be yes or no)');
 
 //Rain question
 var rain = prompt('I live in Seattle, and we get a lot of rain. So do you think I like the rain?');
