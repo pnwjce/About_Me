@@ -1,14 +1,10 @@
-body {
-    background-image: url(./About_Me/blue-bricks-pattern-5340.jpg);
-    text-align: center;
+* {
+    background-color: aqua;
+}
 
+body {
+    background-image: url("blue-close-up-concrete-304664.jpg");
 }
 
 h1 {
-    font-family: cursive;
-    font-weight: 200;
-}
-
-ol {
-    list-style-position: inside;
 }
