@@ -1,0 +1,42 @@
+* {
+  margin: auto;
+  width: 960px;
+  background-image: url("./img/blue-close-up-concrete-304664.jpg");
+}
+
+h1 {
+  margin: 30px;
+  text-align: right;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 100px;
+}
+
+p {
+  display: inline-block;
+  text-indent: 15px;
+  width: 400px;
+  margin: 25px;
+  font-size: 25px;
+}
+
+img {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+h2 {
+  margin: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+  display: inline-block;
+  width: 400px;
+  margin: 15px;
+}
+
+footer {
+  height: 30px;
+}
